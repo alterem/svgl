@@ -128,6 +128,15 @@ export const svgs: iSVG[] = [
     url: 'https://workos.com/'
   },
   {
+    title: 'Whop',
+    category: 'Marketplace',
+    route: {
+      light: '/library/whop.svg',
+      dark: '/library/whop-light.svg'
+    },
+    url: 'https://whop.com/'
+  },
+  {
     title: 'Postman',
     category: 'Software',
     route: '/library/postman.svg',
@@ -2172,5 +2181,17 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/bitwarden.svg',
     url: 'https://bitwarden.com/'
+  },
+  {
+    title: 'Voicemod',
+    category: 'Entertainment',
+    route: '/library/voicemod.svg',
+    url: 'https://voicemod.net/'
+  },
+  {
+    title: 'Neovim',
+    category: 'Software',
+    route: '/library/neovim.svg',
+    url: 'https://neovim.io/'
   }
 ];
