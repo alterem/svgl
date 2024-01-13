@@ -32,6 +32,10 @@ export const svgs: iSVG[] = [
       light: '/library/vercel.svg',
       dark: '/library/vercel_dark.svg'
     },
+    wordmark: {
+      light: '/library/vercel_wordmark.svg',
+      dark: '/library/vercel_wordmark_dark.svg'
+    },
     url: 'https://vercel.com/'
   },
   {
@@ -77,16 +81,16 @@ export const svgs: iSVG[] = [
     url: 'https://ton.org/'
   },
   {
+    title: 'Locofy',
+    category: 'AI',
+    route: '/library/locofy.svg',
+    url: 'https://www.locofy.ai/'
+  },
+  {
     title: 'Runway',
     category: 'AI',
     route: '/library/runway.svg',
     url: 'https://runwayml.com/'
-  },
-  {
-    title: 'Sentry',
-    category: 'Software',
-    route: '/library/sentry.svg',
-    url: 'https://sentry.io/'
   },
   {
     title: 'Yarn',
@@ -141,6 +145,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/postman.svg',
     url: 'https://www.getpostman.com/'
+  },
+  {
+    title: 'Discord.js',
+    category: 'Library',
+    route: '/library/djs.svg',
+    url: 'https://discord.js.org/'
   },
   {
     title: 'OpenSea',
@@ -500,16 +510,19 @@ export const svgs: iSVG[] = [
     url: 'https://qwik.builder.io/'
   },
   {
+    title: 'Coinbase',
+    category: 'Crypto',
+    route: {
+      light: '/library/coinbase-light.svg',
+      dark: '/library/coinbase-dark.svg'
+    },
+    url: 'https://www.coinbase.com/'
+  },
+  {
     title: 'Authy',
     category: 'Software',
     route: '/library/authy.svg',
     url: 'https://authy.com/'
-  },
-  {
-    title: 'Notion',
-    category: 'Software',
-    route: '/library/notion.svg',
-    url: 'https://notion.so/'
   },
   {
     title: 'NestJS',
@@ -699,6 +712,12 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/flutter.svg',
     url: 'https://flutter.dev/'
+  },
+  {
+    title: 'Auth0',
+    category: 'Library',
+    route: '/library/auth0.svg',
+    url: 'https://auth0.com/'
   },
   {
     title: 'Fresh',
@@ -908,6 +927,12 @@ export const svgs: iSVG[] = [
     url: 'https://reactrouter.com/en/main'
   },
   {
+    title: 'AMP',
+    category: 'Library',
+    route: '/library/amp.svg',
+    url: 'https://amp.dev/'
+  },
+  {
     title: 'Developer Student Club',
     category: 'Community',
     route: '/library/gdsc.svg',
@@ -924,6 +949,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/eclipse.svg',
     url: 'https://www.eclipse.org/'
+  },
+  {
+    title: 'Three.js',
+    category: 'Library',
+    route: {
+      light: '/library/threejs-light.svg',
+      dark: '/library/threejs-dark.svg'
+    },
+    url: 'https://threejs.org/'
   },
   {
     title: 'HTML5',
@@ -951,12 +985,6 @@ export const svgs: iSVG[] = [
       dark: '/library/apple_dark.svg'
     },
     url: 'https://www.apple.com'
-  },
-  {
-    title: 'Android',
-    category: 'Software',
-    route: '/library/android.svg',
-    url: 'https://www.android.com/'
   },
   {
     title: 'Windows',
@@ -1253,6 +1281,12 @@ export const svgs: iSVG[] = [
     url: 'https://zod.dev/'
   },
   {
+    title: 'Dreamweaver',
+    category: 'Software',
+    route: '/library/dw.svg',
+    url: 'https://www.adobe.com/products/dreamweaver.html'
+  },
+  {
     title: 'OpenAI',
     category: 'AI',
     route: {
@@ -1290,12 +1324,6 @@ export const svgs: iSVG[] = [
     category: 'Database',
     route: '/library/sql-server.svg',
     url: 'https://www.microsoft.com/en-us/sql-server/'
-  },
-  {
-    title: 'Biomejs',
-    category: 'Compiler',
-    route: '/library/biomejs.svg',
-    url: 'https://biomejs.dev/'
   },
   {
     title: 'Hono',
@@ -1622,12 +1650,6 @@ export const svgs: iSVG[] = [
     url: 'https://cal.com'
   },
   {
-    title: 'Midday.ai',
-    category: 'Software',
-    route: '/library/midday.svg',
-    url: 'https://midday.ai'
-  },
-  {
     title: 'Calendly',
     category: 'Software',
     route: '/library/calendly.svg',
@@ -1948,7 +1970,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Shopify',
     category: 'CMS',
-    route: '/library/shopify.svg',
+    route: {
+      dark: '/library/shopify_dark.svg',
+      light: '/library/shopify_light.svg'
+    },
     url: 'https://www.shopify.com'
   },
   {
@@ -2202,5 +2227,59 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/pitch.svg',
     url: 'https://pitch.com'
+  },
+  {
+    title: 'Biomejs',
+    category: 'Compiler',
+    route: '/library/biomejs.svg',
+    url: 'https://biomejs.dev/'
+  },
+  {
+    title: 'Gradio',
+    category: 'Software',
+    route: '/library/gradio.svg',
+    url: 'https://www.gradio.app/'
+  },
+  {
+    title: 'Meta',
+    category: 'Social',
+    route: '/library/meta.svg',
+    url: 'https://about.meta.com/es/'
+  },
+  {
+    title: 'Stability AI',
+    category: 'AI',
+    route: '/library/stability-ai.svg',
+    url: 'https://stability.ai/'
+  },
+  {
+    title: 'Google PaLM',
+    category: 'AI',
+    route: '/library/google-palm.svg',
+    url: 'https://ai.google/discover/palm2/'
+  },
+  {
+    title: 'Android',
+    category: 'Software',
+    route: '/library/android-icon.svg',
+    url: 'https://www.android.com/'
+  },
+  {
+    title: 'Sentry',
+    category: 'Software',
+    route: '/library/sentry.svg',
+    url: 'https://sentry.io/'
+  },
+  {
+    title: 'Grafana',
+    category: 'Software',
+    route: '/library/grafana.svg',
+    url: 'https://grafana.com/'
+  },
+  {
+    title: 'Notion',
+    category: 'Software',
+    route: '/library/notion.svg',
+    url: 'https://notion.so/'
   }
 ];
