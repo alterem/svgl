@@ -291,6 +291,7 @@ export const svgs: iSVG[] = [
     title: 'YouTube',
     category: 'Social',
     route: '/library/youtube.svg',
+    wordmark: '/library/youtube-wordmark.svg',
     url: 'https://www.youtube.com/'
   },
   {
@@ -306,6 +307,7 @@ export const svgs: iSVG[] = [
     title: 'Google',
     category: 'Social',
     route: '/library/google.svg',
+    wordmark: '/library/google-wordmark.svg',
     url: 'https://www.google.com/'
   },
   {
@@ -387,6 +389,7 @@ export const svgs: iSVG[] = [
     title: 'MongoDB',
     category: 'Database',
     route: '/library/mongodb.svg',
+    wordmark: '/library/mongodb-wordmark.svg',
     url: 'https://www.mongodb.com/'
   },
   {
@@ -1110,6 +1113,12 @@ export const svgs: iSVG[] = [
     url: 'https://stackblitz.com/'
   },
   {
+    title: 'Binance',
+    category: 'Crypto',
+    route: '/library/binance.svg',
+    url: 'https://binance.com/'
+  },
+  {
     title: 'Messenger',
     category: 'Social',
     route: '/library/messenger.svg',
@@ -1368,6 +1377,15 @@ export const svgs: iSVG[] = [
     url: 'https://crossplane.io/'
   },
   {
+    title: 'Volta',
+    category: 'Software',
+    route: {
+      light: '/library/volta-dark.svg',
+      dark: '/library/volta-light.svg'
+    },
+    url: 'https://volta.net/'
+  },
+  {
     title: 'Typesense',
     category: 'Software',
     route: '/library/typesense.svg',
@@ -1410,15 +1428,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.bnbchain.org/'
   },
   {
-    title: 'TRON',
-    category: 'Crypto',
-    route: '/library/trx.svg',
-    url: 'https://tron.network/'
-  },
-  {
-    title: 'Chainlink',
+    title: 'Link',
     category: 'Crypto',
     route: '/library/link.svg',
+    wordmark: {
+      light: '/library/link-wordmark-light.svg',
+      dark: '/library/link-wordmark-dark.svg'
+    },
     url: 'https://chain.link/'
   },
   {
@@ -1546,6 +1562,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
+  },
+  {
+    title: 'Tron',
+    category: 'Crypto',
+    route: '/library/tron.svg',
+    url: 'https://tron.network/'
   },
   {
     title: 'Randevum',
@@ -1970,9 +1992,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Shopify',
     category: 'CMS',
-    route: {
-      dark: '/library/shopify_dark.svg',
-      light: '/library/shopify_light.svg'
+    route: '/library/shopify.svg',
+    wordmark: {
+      dark: '/library/shopify-wordmark-dark.svg',
+      light: '/library/shopify-wordmark-light.svg'
     },
     url: 'https://www.shopify.com'
   },
@@ -2004,6 +2027,7 @@ export const svgs: iSVG[] = [
     title: 'airbnb',
     category: 'Software',
     route: '/library/airbnb.svg',
+    wordmark: '/library/airbnb-wordmark.svg',
     url: 'https://www.airbnb.com'
   },
   {
@@ -2028,6 +2052,7 @@ export const svgs: iSVG[] = [
     title: 'slack',
     category: 'Software',
     route: '/library/slack.svg',
+    wordmark: '/library/slack-wordmark.svg',
     url: 'https://www.slack.com'
   },
   {
@@ -2281,5 +2306,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/notion.svg',
     url: 'https://notion.so/'
+  },
+  {
+    title: 'Litecoin',
+    category: 'Crypto',
+    route: '/library/litecoin.svg',
+    url: 'https://litecoin.org/'
   }
 ];
