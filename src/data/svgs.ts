@@ -825,6 +825,15 @@ export const svgs: iSVG[] = [
     url: 'https://tanstack.com/query/v4'
   },
   {
+    title: 'Devto',
+    category: 'Community',
+    route: {
+      light: '/library/devto-light.svg',
+      dark: '/library/devto-dark.svg'
+    },
+    url: 'https://dev.to/'
+  },
+  {
     title: 'Redis',
     category: 'Database',
     route: '/library/redis.svg',
@@ -1090,6 +1099,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/hcaptcha.svg',
     url: 'https://www.hcaptcha.com/'
+  },
+  {
+    title: 'Appwrite',
+    category: 'Software',
+    route: '/library/appwrite.svg',
+    url: 'https://appwrite.io/'
   },
   {
     title: 'Loom',
@@ -2008,7 +2023,10 @@ export const svgs: iSVG[] = [
   {
     title: 'bigcommerce',
     category: 'CMS',
-    route: '/library/bigcommerce.svg',
+    route: {
+      light: '/library/bigcommerce-light.svg',
+      dark: '/library/bigcommerce-dark.svg'
+    },
     url: 'https://www.bigcommerce.co.uk'
   },
   {
@@ -2215,6 +2233,15 @@ export const svgs: iSVG[] = [
     url: 'https://1password.com'
   },
   {
+    title: 'Flask',
+    category: 'Framework',
+    route: {
+      light: '/library/flask-light.svg',
+      dark: '/library/flask-dark.svg'
+    },
+    url: 'https://flask.palletsprojects.com/'
+  },
+  {
     title: 'Alacritty',
     category: 'Software',
     route: '/library/alacritty.svg',
@@ -2312,5 +2339,23 @@ export const svgs: iSVG[] = [
     category: 'Crypto',
     route: '/library/litecoin.svg',
     url: 'https://litecoin.org/'
+  },
+  {
+    title: 'ElysiaJS',
+    category: 'Framework',
+    route: '/library/elysiajs.svg',
+    url: 'https://elysiajs.com/'
+  },
+  {
+    title: 'TensorFlow',
+    category: 'Library',
+    route: '/library/tensorflow.svg',
+    url: 'https://www.tensorflow.org/'
+  },
+  {
+    title: 'Midday',
+    category: 'AI',
+    route: '/library/midday.svg',
+    url: 'https://midday.ai/'
   }
 ];
