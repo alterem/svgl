@@ -63,7 +63,7 @@ export const svgs: iSVG[] = [
     url: 'https://nuxtjs.org/'
   },
   {
-    title: 'Nextjs',
+    title: 'Next.js',
     category: 'Framework',
     route: '/library/nextjs.svg',
     url: 'https://nextjs.org/'
@@ -515,9 +515,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Coinbase',
     category: 'Crypto',
-    route: {
-      light: '/library/coinbase-light.svg',
-      dark: '/library/coinbase-dark.svg'
+    route: '/library/coinbase.svg',
+    wordmark: {
+      light: '/library/coinbase-wordmark-light.svg',
+      dark: '/library/coinbase-wordmark-dark.svg'
     },
     url: 'https://www.coinbase.com/'
   },
@@ -1023,6 +1024,12 @@ export const svgs: iSVG[] = [
     url: 'https://builder.io/'
   },
   {
+    title: 'Babel',
+    category: 'Compiler',
+    route: '/library/babel.svg',
+    url: 'https://babeljs.io/'
+  },
+  {
     title: 'Surrealdb',
     category: 'Database',
     route: '/library/surrealdb.svg',
@@ -1153,7 +1160,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'WordPress',
-    category: 'Software',
+    category: ['Software', 'CMS'],
     route: '/library/wordpress.svg',
     url: 'https://wordpress.org/'
   },
@@ -1994,7 +2001,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'MonkeyType',
-    category: 'Typing',
+    category: 'Software',
     route: '/library/monkeytype.svg',
     url: 'https://monkeytype.com/'
   },
@@ -2021,16 +2028,7 @@ export const svgs: iSVG[] = [
     url: 'https://www.webflow.com'
   },
   {
-    title: 'bigcommerce',
-    category: 'CMS',
-    route: {
-      light: '/library/bigcommerce-light.svg',
-      dark: '/library/bigcommerce-dark.svg'
-    },
-    url: 'https://www.bigcommerce.co.uk'
-  },
-  {
-    title: 'sanity',
+    title: 'Sanity',
     category: 'CMS',
     route: '/library/sanity.svg',
     url: 'https://www.sanity.io'
@@ -2042,57 +2040,60 @@ export const svgs: iSVG[] = [
     url: 'https://www.sky.com'
   },
   {
-    title: 'airbnb',
+    title: 'Airbnb',
     category: 'Software',
     route: '/library/airbnb.svg',
     wordmark: '/library/airbnb-wordmark.svg',
     url: 'https://www.airbnb.com'
   },
   {
-    title: 'uber',
+    title: 'Uber',
     category: 'Software',
-    route: '/library/uber.svg',
+    route: {
+      light: '/library/uber_light.svg',
+      dark: '/library/uber_dark.svg'
+    },
     url: 'https://www.uber.com'
   },
   {
-    title: 'gmail',
+    title: 'Gmail',
     category: 'Software',
     route: '/library/gmail.svg',
     url: 'https://www.gmail.com'
   },
   {
-    title: 'outlook',
+    title: 'Outlook',
     category: 'Software',
     route: '/library/outlook.svg',
     url: 'https://www.outlook.com'
   },
   {
-    title: 'slack',
+    title: 'Slack',
     category: 'Software',
     route: '/library/slack.svg',
     wordmark: '/library/slack-wordmark.svg',
     url: 'https://www.slack.com'
   },
   {
-    title: 'snapchat',
+    title: 'Snapchat',
     category: 'Software',
     route: '/library/snapchat.svg',
     url: 'https://www.snapchat.com'
   },
   {
-    title: 'ebay',
+    title: 'Ebay',
     category: 'Software',
     route: '/library/ebay.svg',
     url: 'https://www.ebay.com'
   },
   {
-    title: 'ibm',
+    title: 'IBM',
     category: 'Software',
     route: '/library/ibm.svg',
     url: 'https://www.ibm.com'
   },
   {
-    title: 'trustpilot',
+    title: 'TrustPilot',
     category: 'Software',
     route: '/library/trustpilot.svg',
     url: 'https://www.trustpilot.com'
@@ -2363,5 +2364,60 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/csharp.svg',
     url: 'https://dotnet.microsoft.com/languages/csharp'
-  }
+  },
+  {
+    title: 'Replicate',
+    category: 'AI',
+    route: {
+      light: '/library/replicate_light.svg',
+      dark: '/library/replicate_dark.svg'
+    },
+    wordmark: {
+      light: '/library/replicate-wordmark_light.svg',
+      dark: '/library/replicate-wordmark_dark.svg'
+    },
+    url: 'https://replicate.com/'
+  },
+  {
+    title: 'Markdown',
+    category: 'Language',
+    route: {
+      light: '/library/markdown-light.svg',
+      dark: '/library/markdown-dark.svg'
+    },
+    url: 'https://www.markdownguide.org/'
+  },
+  {
+    title: 'Movie Web',
+    category: 'Entertainment',
+    route: '/library/movie-web.svg',
+    url: 'https://movie-web.app/'
+  },
+  {
+    title: 'Radix UI',
+    category: 'Library',
+    route: {
+      light: '/library/radix-ui_light.svg',
+      dark: '/library/radix-ui_dark.svg'
+    },
+    url: 'https://www.radix-ui.com/'
+  },
+  {
+    title: 'SWR',
+    category: 'Library',
+    route: {
+      light: '/library/swr-light.svg',
+      dark: '/library/swr-dark.svg'
+    },
+    url: 'https://swr.vercel.app/'
+  },
+  {
+    title: 'Refine',
+    category: 'Framework',
+    route: {
+      light: '/library/refine_dark.svg',
+      dark: '/library/refine_light.svg'
+    },
+    url: 'https://refine.dev/'
+  },
 ];

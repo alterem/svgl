@@ -10,6 +10,10 @@
         Discover
     </a>
     <span>&nbsp;✦&nbsp;</span>
+    <a href="https://github.com/pheralb/svgl/issues/new?assignees=pheralb&labels=request&projects=&template=request-svg-.md&title=%5BRequest%5D%3A">
+        Request logo
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
     <a href="#-getting-started">
         Submit logo
     </a>
@@ -92,16 +96,30 @@ pnpm install
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
+- If the logo is a solid color:
+
 ```json
 {
   "title": "Title",
   "category": "Category",
   "route": "/library/your_logo.svg",
   "url": "Website"
-},
+}
 ```
 
-or to support a different logo for light and dark themes:
+- If the logo has logo + wordmark version:
+
+```json
+{
+  "title": "Title",
+  "category": "Category",
+  "route": "/library/your_logo.svg",
+  "wordmark": "/library/your_logo_wordmark.svg",
+  "url": "Website"
+}
+```
+
+- If the logo/wordmark has light and dark mode:
 
 ```json
 {
@@ -111,12 +129,18 @@ or to support a different logo for light and dark themes:
     "light": "/library/your_logo_light.svg",
     "dark": "/library/your_logo_dark.svg"
   },
+  "wordmark": {
+    "light": "/library/your_wordmark-logo_light.svg",
+    "dark": "/library/your_wordmark-logo_dark.svg"
+  },
   "url": "Website"
-},
+}
 ```
 
 > [!NOTE]
-> The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
+>
+> - The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
+> - You can add multiple categories to the same logo, for example: `"category": ["Social", "Design"]` (max 3 categories per logo).
 
 And create a pull request with your logo 🚀.
 
@@ -135,11 +159,11 @@ UPSTASH_REDIS_TOKEN = ""
 
 A list of extensions that use the [svgl API](https://svgl.app/api), created by the community:
 
-| | Extension      | Description                                        | Created by                                | Link                                                                            |
-| ---- | -------------- | -------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/svgl.svg" height="25" /> | svgls          | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)   | [Github Repository](https://github.com/sujjeee/svgls)                                  |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" /> | SVGL for Figma | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou) | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl) |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.          | [1weiho](https://twitter.com/1weiho) | [Raycast Store](https://www.raycast.com/davidho0403/svgl) |
+|                                                                                                | Extension        | Description                                        | Created by                                | Link                                                                            |
+| ---------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/svgl.svg" height="25" />    | svgls            | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)   | [Github Repository](https://github.com/sujjeee/svgls)                           |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" />   | SVGL for Figma   | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou) | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl) |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)      | [Raycast Store](https://www.raycast.com/1weiho/svgl)                       |
 
 ## ✌️ Contributing
 
