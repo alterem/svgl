@@ -1013,6 +1013,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.python.org/'
   },
   {
+    title: 'Solidity',
+    category: 'Language',
+    route: '/library/solidity.svg',
+    url: 'https://soliditylang.org/'
+  },
+  {
     title: 'Turbopack',
     category: 'Software',
     route: '/library/turbopack.svg',
@@ -1176,6 +1182,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/elementor.svg',
     url: 'https://elementor.com/'
+  },
+  {
+    title: 'Kick',
+    category: 'Entertainment',
+    route: {
+      light: '/library/kick-light.svg',
+      dark: '/library/kick-dark.svg'
+    },
+    url: 'https://kick.com/'
   },
   {
     title: 'Prime video',
@@ -2241,6 +2256,10 @@ export const svgs: iSVG[] = [
       light: '/library/flask-light.svg',
       dark: '/library/flask-dark.svg'
     },
+    wordmark: {
+      light: '/library/flask-wordmark-light.svg',
+      dark: '/library/flask-wordmark-dark.svg'
+    },
     url: 'https://flask.palletsprojects.com/'
   },
   {
@@ -2455,5 +2474,18 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/obs.svg',
     url: 'Website'
+  },
+  {
+    title: 'Stack Overflow',
+    category: 'Software',
+    route: '/library/stackoverflow.svg',
+    wordmark: '/library/stackoverflow_wordmark.svg',
+    url: 'https://stackoverflow.com/'
+  },
+  {
+    title: 'TikTok',
+    category: 'Social',
+    route: '/library/tiktok.svg',
+    url: 'https://www.tiktok.com/'
   }
 ];
