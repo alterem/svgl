@@ -8,6 +8,12 @@ export const svgs: iSVG[] = [
     url: 'https://discord.com/'
   },
   {
+    title: 'Aliexpress',
+    category: 'Software',
+    route: '/library/aliexpress-icon.svg',
+    url: 'https://aliexpress.com/'
+  },
+  {
     title: 'Github',
     category: 'Software',
     route: '/library/github.svg',
@@ -1541,7 +1547,7 @@ export const svgs: iSVG[] = [
     title: 'Dub',
     category: 'Software',
     route: '/library/dub.svg',
-    wordmark:'/library/dub-wordmark.svg',
+    wordmark: '/library/dub-wordmark.svg',
     url: 'https://dub.co'
   },
   {
@@ -2102,6 +2108,10 @@ export const svgs: iSVG[] = [
     title: 'Raycast',
     category: 'Software',
     route: '/library/raycast.svg',
+    wordmark: {
+      light: '/library/raycast-wordmark-light.svg',
+      dark: '/library/raycast-wordmark-dark.svg'
+    },
     url: 'https://raycast.com/'
   },
   {
