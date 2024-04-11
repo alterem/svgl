@@ -11,6 +11,7 @@ export const svgs: iSVG[] = [
     title: 'Aliexpress',
     category: 'Software',
     route: '/library/aliexpress-icon.svg',
+    wordmark: '/library/aliexpress-logo.svg',
     url: 'https://aliexpress.com/'
   },
   {
@@ -1529,7 +1530,7 @@ export const svgs: iSVG[] = [
     title: 'Premiere',
     category: 'Design',
     route: '/library/premiere.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/es/products/premiere'
   },
   {
     title: 'VK',
@@ -2187,6 +2188,10 @@ export const svgs: iSVG[] = [
       light: '/library/pnpm.svg',
       dark: '/library/pnpm_dark.svg'
     },
+    wordmark: {
+      light: '/library/pnpm_wordmark_light.svg',
+      dark: '/library/pnpm_wordmark_dark.svg'
+    },
     url: 'https://pnpm.io/'
   },
   {
@@ -2561,5 +2566,17 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/nodejs.svg',
     url: 'https://nodejs.org/'
+  },
+  {
+    title: 'Raindrop.io',
+    category: 'Software',
+    route: '/library/raindrop.svg',
+    url: 'https://raindrop.io/'
+  },
+  {
+    title: 'Microsoft Todo',
+    category: 'Software',
+    route: '/library/microsoft-todo.svg',
+    url: 'https://to-do.office.com/'
   }
 ];
