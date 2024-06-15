@@ -1,5 +1,6 @@
 import type { RequestEvent } from './$types';
-import type { iSVG } from '@/types/svg';
+import type { ThemeOptions, iSVG } from '@/types/svg';
+import type { tCategory } from '@/types/categories';
 
 import { error, json } from '@sveltejs/kit';
 import { ratelimit } from '@/server/redis';
@@ -8,7 +9,7 @@ import { ratelimit } from '@/server/redis';
 import { svgsData } from '@/data';
 
 export const GET = async ({ url, request }: RequestEvent) => {
-  const fullUrl = url.origin ?? 'svgl.vercel.app';
+  const fullUrl = url.origin ?? 'svgl.app';
   const ip = request.headers.get('x-forwarded-for') ?? '';
   const { success, reset } = await ratelimit.limit(ip);
 
@@ -29,23 +30,25 @@ export const GET = async ({ url, request }: RequestEvent) => {
   const getCategoryParams = url.searchParams.get('category');
   const getSearchParams = url.searchParams.get('search');
 
-  // Add full route to svgs:
-  const fullRouteSvgsData: iSVG[] = svgsData.map((svg) => {
-    if (typeof svg.route === 'object' && svg.route !== null) {
+  const addFullUrl = (value: string | ThemeOptions): string | ThemeOptions => {
+    if (typeof value === 'string') {
+      return `${fullUrl}${value}`;
+    } else if (typeof value === 'object') {
       return {
-        ...svg,
-        route: {
-          light: `${fullUrl}${svg.route.light}`,
-          dark: `${fullUrl}${svg.route.dark}`
-        }
-      };
-    } else if (typeof svg.route === 'string') {
-      return {
-        ...svg,
-        route: `${fullUrl}${svg.route}`
+        light: `${fullUrl}${value.light}`,
+        dark: `${fullUrl}${value.dark}`
       };
     }
-    return svg;
+    return value;
+  };
+
+  // Add full route to svgs:
+  const fullRouteSvgsData: iSVG[] = svgsData.map((svg) => {
+    return {
+      ...svg,
+      route: addFullUrl(svg.route),
+      wordmark: svg.wordmark ? addFullUrl(svg.wordmark) : undefined
+    };
   });
 
   // Status 200 | If no limit is provided, return all svgs:
@@ -57,8 +60,17 @@ export const GET = async ({ url, request }: RequestEvent) => {
   const category = getCategoryParams;
 
   if (category) {
+    const targetCategory = category.charAt(0).toUpperCase() + category.slice(1);
     const categorySvgs = fullRouteSvgsData.filter((svg) => {
-      return svg.category === category.charAt(0).toUpperCase() + category.slice(1);
+      if (typeof svg.category === 'string') {
+        return svg.category === targetCategory;
+      }
+
+      if (Array.isArray(svg.category)) {
+        return svg.category.includes(targetCategory as tCategory);
+      }
+
+      return false;
     });
 
     // Error 400 | If category does not exist:

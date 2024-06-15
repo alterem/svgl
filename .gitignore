@@ -6,8 +6,13 @@ yarn.lock
 # Folders
 /.svelte-kit
 /build
+dist
 /package
 .idea/
+
+# Hono
+.wrangler
+.dev.vars
 
 # Logs
 .DS_Store
@@ -21,3 +26,6 @@ yarn.lock
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 src/figma/dist
+
+# Lychee files
+.lycheecache
